@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Todo List Moderna</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Componenti da Acquistare</h1>
+    <div class="input-group">
+      <input
+        type="text"
+        id="task-input"
+        placeholder="Aggiungi una nuova attività"
+        autocomplete="off"
+      />
+      <select id="category-select">
+        <option value="" disabled selected>Seleziona categoria</option>
+        <option value="Estetica">Estetica</option>
+        <option value="Motore">Motore</option>
+        <option value="Ricambi">Ricambi</option>
+        <option value="Carrozzeria">Carrozzeria</option>
+      </select>
+    </div>
+    <button id="add-button">Aggiungi</button>
+    <button id="clear-button">Cancella tutte le attività</button>
+
+    <div class="task-columns">
+      <div class="category-col" data-category="Estetica">
+        <h2>Estetica</h2>
+        <ul></ul>
+      </div>
+      <div class="category-col" data-category="Motore">
+        <h2>Motore</h2>
+        <ul></ul>
+      </div>
+      <div class="category-col" data-category="Ricambi">
+        <h2>Ricambi</h2>
+        <ul></ul>
+      </div>
+      <div class="category-col" data-category="Carrozzeria">
+        <h2>Carrozzeria</h2>
+        <ul></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
